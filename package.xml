@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package>
+    <name>esiaf_hyperion_configs</name>
+    <version>0.0.1</version>
+    <description>Hyperion config files for the esiaf framework</description>
+
+    <maintainer email="rfeldh@gmail.com">Robert Feldhans</maintainer>
+    <license>---none---</license>
+    <author>rfeldhans</author>
+
+    <buildtool_depend>catkin</buildtool_depend>
+
+
+</package>

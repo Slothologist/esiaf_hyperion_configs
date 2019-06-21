@@ -1,0 +1,11 @@
+name: SpeechRecPipeline_Pepper
+
+groups:
+    - !include ../components/groups/ros_basics.yaml
+
+
+shell_path: /bin/bash
+verbose_checks: True
+env: env/pepper_env.sh
+
+monitoring_rate: 1

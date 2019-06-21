@@ -1,0 +1,5 @@
+name: ROS_basics
+
+components:
+    - !include ../roscore.yaml
+    - !include ../orchestrator.yaml

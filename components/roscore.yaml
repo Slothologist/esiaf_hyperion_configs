@@ -1,0 +1,17 @@
+name: roscore
+
+cmd:
+  - start: |
+      ros_env
+      stdbuf -oL -eL roscore
+  - check: |
+      source ${prefix}/setup.bash
+      rosnode list | grep /rosout
+
+wait: 2
+
+provides:
+  - roscore
+  - base_system
+
+host: ${pepper}
