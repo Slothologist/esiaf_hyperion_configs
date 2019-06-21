@@ -2,6 +2,8 @@ name: SpeechRecPipeline_Pepper
 
 groups:
     - !include ../components/groups/ros_basics.yaml
+    - !include ../components/groups/utils.yaml
+    - !include ../components/groups/speechrec.yaml
 
 
 shell_path: /bin/bash

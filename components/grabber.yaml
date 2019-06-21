@@ -1,0 +1,19 @@
+name: grabber
+cmd:
+  - start: |
+      ros_env
+      stdbuf -oL -eL roslaunch esiaf_ros grabber.launch path_to_config:=${GRABBER_CONFIG}
+  - check: |
+      ros_env
+      rosnode list | grep -e /grabber
+tags:
+  - grabber
+  - audio_input
+requires:
+  - orchestrator
+provides:
+  - grabber
+noauto: True
+
+host: ${pepper}
+

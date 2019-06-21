@@ -1,0 +1,18 @@
+name: recorder
+cmd:
+  - start: |
+      ros_env
+      stdbuf -oL -eL roslaunch esiaf_ros record.launch path_to_config:=${RECORDER_CONFIG}
+  - check: |
+      ros_env
+      rosnode list | grep -e /record
+tags:
+  - grabber
+  - audio_output
+  - debug
+requires:
+  - orchestrator
+noauto: True
+
+host: ${pepper}
+

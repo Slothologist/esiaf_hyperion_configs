@@ -1,0 +1,8 @@
+name: Utilities
+
+components:
+    - !include ../grabber.yaml
+    - !include ../player.yaml
+    - !include ../recorder.yaml
+    - !include ../splitter.yaml
+    - !include ../wav_player.yaml

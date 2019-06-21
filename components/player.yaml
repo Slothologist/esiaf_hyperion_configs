@@ -1,0 +1,18 @@
+name: player
+cmd:
+  - start: |
+      ros_env
+      stdbuf -oL -eL roslaunch esiaf_ros play.launch path_to_config:=${PLAYER_CONFIG}
+  - check: |
+      ros_env
+      rosnode list | grep -e /player
+tags:
+  - grabber
+  - audio_output
+  - debug
+requires:
+  - orchestrator
+noauto: True
+
+host: ${pepper}
+

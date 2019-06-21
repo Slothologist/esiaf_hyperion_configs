@@ -1,0 +1,16 @@
+name: splitter
+cmd:
+  - start: |
+      ros_env
+      stdbuf -oL -eL roslaunch esiaf_channel_utils esiaf_splitter.launch path_to_config:=${SPLITTER_CONFIG}
+  - check: |
+      ros_env
+      rosnode list | grep -e /esiaf_splitter
+tags:
+  - channel
+requires:
+  - orchestrator
+noauto: True
+
+host: ${pepper}
+

@@ -1,0 +1,17 @@
+name: wav_player
+cmd:
+  - start: |
+      ros_env
+      stdbuf -oL -eL roslaunch esiaf_wav_player wav_player.launch path_to_config:=${WAV_PLAYER_CONFIG}
+  - check: |
+      ros_env
+      rosnode list | grep -e /wav_player
+tags:
+  - audio_input
+  - automatisation
+requires:
+  - orchestrator
+noauto: True
+
+host: ${pepper}
+

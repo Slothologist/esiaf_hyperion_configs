@@ -1,0 +1,4 @@
+name: SpeechRec_Components
+
+components:
+    - !include ../audio_segmenter.yaml

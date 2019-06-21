@@ -2,7 +2,7 @@ name: orchestrator
 cmd:
   - start: |
       ros_env
-      stdbuf -oL -eL roslaunch esiaf_orchestrator orchestrator.launch path_to_config:=${prefix}/share/esiaf_orchestrator/config/basic_orchestrator_config.yaml
+      stdbuf -oL -eL roslaunch esiaf_orchestrator orchestrator.launch path_to_config:=${ORCHESTRATOR_CONFIG}
   - check: |
       ros_env
       rosnode list | grep -e /orchestrator$
