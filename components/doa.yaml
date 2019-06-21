@@ -1,0 +1,16 @@
+name: doa
+cmd:
+  - start: |
+      ros_env
+      stdbuf -oL -eL roslaunch esiaf_doa esiaf_doa.launch path_to_config:=${DOA_CONFIG}
+  - check: |
+      ros_env
+      rosnode list | grep -e /esiaf_doa
+tags:
+  - direction_of_arrival
+  - ssl
+requires:
+  - orchestrator
+
+host: ${pepper}
+

@@ -1,0 +1,15 @@
+name: emotion_recognition
+cmd:
+  - start: |
+      ros_env
+      stdbuf -oL -eL roslaunch esiaf_emotion_recognition esiaf_emotion_recognition.launch path_to_config:=${EMOTION_REC_CONFIG}
+  - check: |
+      ros_env
+      rosnode list | grep -e /esiaf_emotion_recognition
+tags:
+  - emotion_recognition
+requires:
+  - orchestrator
+
+host: ${pepper}
+

@@ -2,3 +2,6 @@ name: SpeechRec_Components
 
 components:
     - !include ../audio_segmenter.yaml
+    - !include ../pocketsphinx.yaml
+    - !include ../doa.yaml
+    - !include ../emotion_recognition.yaml

@@ -1,0 +1,15 @@
+name: pocketsphinx
+cmd:
+  - start: |
+      ros_env
+      stdbuf -oL -eL roslaunch esiaf_pocketsphinx esiaf_ps.launch path_to_config:=${POCKETSPHINX_CONFIG}
+  - check: |
+      ros_env
+      rosnode list | grep -e /esiaf_pocketsphinx
+tags:
+  - speech_rec
+requires:
+  - orchestrator
+
+host: ${pepper}
+
