@@ -15,5 +15,5 @@ provides:
   - grabber
 noauto: True
 
-host: ${pepper}
+host: ${robot}
 

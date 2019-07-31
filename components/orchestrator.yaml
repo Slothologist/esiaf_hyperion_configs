@@ -13,5 +13,5 @@ requires:
 provides:
   - orchestrator
 
-host: ${pepper}
+host: ${machine}
 

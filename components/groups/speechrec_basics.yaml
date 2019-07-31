@@ -1,0 +1,6 @@
+name: SpeechRec_Basics
+
+components:
+    - !include ../grabber.yaml
+    - !include ../audio_segmenter.yaml
+    - !include ../pocketsphinx.yaml

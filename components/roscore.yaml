@@ -14,4 +14,4 @@ provides:
   - roscore
   - base_system
 
-host: ${pepper}
+host: ${machine}

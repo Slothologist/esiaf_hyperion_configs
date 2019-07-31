@@ -10,7 +10,7 @@ else
 fi
 
 export robot=$pepper
-export machine=$robot
+export machine=`hostname -s`
 
 export ROS_MASTER_URI=http://$robot:11311
 

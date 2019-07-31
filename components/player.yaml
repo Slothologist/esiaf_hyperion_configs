@@ -14,5 +14,5 @@ requires:
   - orchestrator
 noauto: True
 
-host: ${pepper}
+host: ${machine}
 

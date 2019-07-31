@@ -1,0 +1,4 @@
+name: SSL_Beamform
+
+components:
+    - !include ../doa.yaml

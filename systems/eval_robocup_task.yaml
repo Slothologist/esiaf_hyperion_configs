@@ -1,0 +1,16 @@
+name: Eval_RoboCup_Task
+
+groups:
+    - !include ../components/groups/ros_basics.yaml
+    - !include ../components/groups/speechrec_basics.yaml
+    - !include ../components/groups/ssl_beamform.yaml
+    - name: Utilities
+      components:
+        - !include ../components/splitter.yaml
+
+
+shell_path: /bin/bash
+verbose_checks: True
+env: env/pepper_env_robocup_task.sh
+
+monitoring_rate: 1

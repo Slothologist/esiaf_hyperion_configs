@@ -12,5 +12,5 @@ tags:
 requires:
   - orchestrator
 
-host: ${pepper}
+host: ${machine}
 
