@@ -3,13 +3,7 @@
 
 export prefix="/vol/systems/speech-pipeline-melodic/"
 
-if [ -z "$SIMMODE" ]; then
-    export pepper=`hostname -s`
-else
-    export pepper='pepper-robot'
-fi
-
-export robot=$pepper
+export robot='pepper-robot'
 export machine=`hostname -s`
 
 export ROS_MASTER_URI=http://$robot:11311
