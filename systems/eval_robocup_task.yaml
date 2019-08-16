@@ -6,7 +6,7 @@ groups:
     - !include ../components/groups/ssl_beamform.yaml
     - name: Utilities
       components:
-        - !include ../components/splitter.yaml
+        - !include ../components/splitter_cpp.yaml
 
 
 shell_path: /bin/bash

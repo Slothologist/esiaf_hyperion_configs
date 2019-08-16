@@ -1,0 +1,19 @@
+name: Eval_Pipeline_2
+
+groups:
+    - !include ../components/groups/ros_basics.yaml
+    - name: SpeechRecBasics
+      components:
+        - !include ../components/audio_segmenter.yaml
+        - !include ../components/pocketsphinx.yaml
+    - name: Utilities
+      components:
+        - !include ../components/wav_player.yaml
+
+
+
+shell_path: /bin/bash
+verbose_checks: True
+env: env/pepper_env_pipeline_2.sh
+
+monitoring_rate: 1
