@@ -1,0 +1,16 @@
+name: elongator
+cmd:
+  - start: |
+      ros_env
+      stdbuf -oL -eL roslaunch esiaf_eval_dummy_nodes widener.launch
+  - check: |
+      ros_env
+      rosnode list | grep -e /widener
+tags:
+  - dummy
+requires:
+  - orchestrator
+noauto: True
+
+host: ${machine}
+
