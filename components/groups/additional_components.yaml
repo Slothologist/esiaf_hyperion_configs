@@ -2,3 +2,4 @@ name: Additional_Components
 
 components:
     - !include ../emotion_recognition.yaml
+    - !include ../gender_recognition.yaml

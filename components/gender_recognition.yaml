@@ -1,0 +1,15 @@
+name: emotion_recognition
+cmd:
+  - start: |
+      ros_env
+      stdbuf -oL -eL roslaunch esiaf_gender_rec esiaf_gender_rec.launch path_to_config:=${GENDER_REC_CONFIG}
+  - check: |
+      ros_env
+      rosnode list | grep -e /esiaf_gender_rec
+tags:
+  - emotion_recognition
+requires:
+  - orchestrator
+
+host: ${machine}
+
