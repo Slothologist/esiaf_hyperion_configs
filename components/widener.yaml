@@ -1,4 +1,4 @@
-name: elongator
+name: widener
 cmd:
   - start: |
       ros_env
