@@ -1,0 +1,17 @@
+name: Eval_Pipeline_1
+
+groups:
+    - name: ROS_Basics
+      components:
+        - !include ../components/roscore.yaml
+    - name: SpeechRec
+      components:
+        - !include ../components/psa.yaml
+
+
+
+shell_path: /bin/bash
+verbose_checks: True
+env: env/pepper_env_pipeline_1.sh
+
+monitoring_rate: 1

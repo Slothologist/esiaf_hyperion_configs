@@ -1,4 +1,4 @@
-name: emotion_recognition
+name: gender_recognition
 cmd:
   - start: |
       ros_env

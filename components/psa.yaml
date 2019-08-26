@@ -1,0 +1,14 @@
+name: PocketSphinxAdapter
+
+cmd:
+  - start: |
+      ros_env
+      stdbuf -oL -eL ${prefix}/bin/pocketsphinx_adapter ${VDEMO_PSA_CONFIG} --hmm=${PSA_MODEL} --dict=${PSA_DICT} --alsa-device=${ALSA_DEVICE}
+  - check: |
+      source ${prefix}/setup.bash
+      rosnode list | grep /ps_adapter
+
+requires:
+  - roscore
+
+host: ${robot}
